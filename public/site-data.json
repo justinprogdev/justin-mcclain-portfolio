@@ -1,0 +1,13 @@
+{
+  "biographyData": {
+    "title": "Biography",
+    "tagline": "Welcome to Justin McClain's Portfolio!",
+    "bio": "Justin McClain is a software engineer at Progressive Insurance, specializing in C# for web APIs and desktop applications. He holds a bachelor's degree from Indiana Tech. Outside of work, Justin enjoys beach vacations with his family and their beloved dog. He is an avid reader and writer of fiction, and continually explores new advancements in technology."
+  },
+  "interestsData" : {
+    "title" : "Justin's Current Interests",
+    "tagline": "It Varies",
+    "Favorite Authors" :["Alex Garlend", "Hunter S. Thompson" , "Jack Kerauc" , "Kurt Vonnegut"],
+    "Favorite Programming Languages":["C#", "Python"]
+  }
+}

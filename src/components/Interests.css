@@ -1,0 +1,90 @@
+.interests-container {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    margin: 20px auto;
+    border-radius: 12px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .interests-container:hover {
+    transform: scale(1.02);
+    background: linear-gradient(to right, #d3cbb8, #ffffff);
+  }
+  
+  .interests-title {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .interests-tagline {
+    font-size: 1.4em;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .interests-section {
+    margin: 20px 0;
+  }
+  
+  .interests-section h2 {
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .interests-section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .interests-section li {
+    font-size: 1.2em;
+    color: #555;
+    background-color: #f8f8f8;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  }
+  
+  .interests-section li:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive Media Queries */
+  @media (max-width: 600px) {
+    .interests-container {
+      width: 95%;
+    }
+  
+    .interests-title {
+      font-size: 2em;
+    }
+  
+    .interests-tagline {
+      font-size: 1.2em;
+    }
+  
+    .interests-section ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .interests-section li {
+      font-size: 1em;
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
