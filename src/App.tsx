@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 import PhotoGallery from './components/PhotoGallery';
 
-function App() {
+const App: React.FC = () => {
   return (
     <Router>
       <div>
