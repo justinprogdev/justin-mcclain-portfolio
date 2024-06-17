@@ -15,6 +15,7 @@ const Resume: React.FC = () => {
   return (
     <div className="resume">
       <h1>Resume</h1>
+      <p>You may read my resume online, or download a PDF copy to keep with the button below. </p>
       <iframe src="/resume.pdf" title="Resume" className="resume-viewer" />
       <button onClick={handleDownload} className="download-button">Download Resume</button>
     </div>

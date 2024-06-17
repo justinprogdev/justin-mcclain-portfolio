@@ -1,90 +1,98 @@
-.interests-container {
-    text-align: center;
+.interests {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 40px auto;
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+}
+
+.interests h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.interests .tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+  color: #2980b9;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  color: #444;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.interests-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.interests-list li {
+  font-size: 1.2em;
+  color: #555;
+  background-color: #f8f8f8;
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.interests-list li i {
+  margin-right: 10px;
+}
+
+.interests-list li:hover {
+  background-color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 600px) {
+  .interests {
     padding: 20px;
-    background: linear-gradient(to right, #ece9e6, #ffffff);
-    margin: 20px auto;
-    border-radius: 12px;
-    width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, background 0.3s;
+    margin: 20px;
   }
-  
-  .interests-container:hover {
-    transform: scale(1.02);
-    background: linear-gradient(to right, #d3cbb8, #ffffff);
+
+  .interests h1 {
+    font-size: 2em;
   }
-  
-  .interests-title {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 10px;
-    font-family: 'Arial', sans-serif;
+
+  .interests .tagline {
+    font-size: 1em;
   }
-  
-  .interests-tagline {
-    font-size: 1.4em;
-    color: #555;
-    margin-bottom: 20px;
+
+  .section h2 {
+    font-size: 1.5em;
   }
-  
-  .interests-section {
-    margin: 20px 0;
+
+  .interests-list {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .interests-section h2 {
-    font-size: 1.8em;
-    color: #444;
-    margin-bottom: 10px;
+
+  .interests-list li {
+    font-size: 1em;
+    width: 100%;
+    margin: 5px 0;
   }
-  
-  .interests-section ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .interests-section li {
-    font-size: 1.2em;
-    color: #555;
-    background-color: #f8f8f8;
-    margin: 5px;
-    padding: 10px 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, box-shadow 0.3s, transform 0.3s;
-  }
-  
-  .interests-section li:hover {
-    background-color: #e0e0e0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-  }
-  
-  /* Responsive Media Queries */
-  @media (max-width: 600px) {
-    .interests-container {
-      width: 95%;
-    }
-  
-    .interests-title {
-      font-size: 2em;
-    }
-  
-    .interests-tagline {
-      font-size: 1.2em;
-    }
-  
-    .interests-section ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .interests-section li {
-      font-size: 1em;
-      width: 100%;
-      margin: 5px 0;
-    }
-  }
-  
+}

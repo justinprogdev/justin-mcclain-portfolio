@@ -39,12 +39,12 @@ const Interests: React.FC = () => {
   }
 
   return (
-    <section className="interests-container">
-      <h1 className="interests-title">{interestsData?.title || 'Interests'}</h1>
-      <p className="interests-tagline">{interestsData?.tagline || 'Things I find interesting'}</p>
-      <div className="interests-section">
+    <div className="interests">
+      <h1>{interestsData?.title}</h1>
+      <p className="tagline">{interestsData?.tagline}</p>
+      <div className="section">
         <h2>Favorite Authors</h2>
-        <ul>
+        <ul className="interests-list">
           {interestsData?.["Favorite Authors"].map((author, index) => (
             <li key={index}>
               <i className="fas fa-book" aria-hidden="true"></i> <span>{author}</span>
@@ -52,9 +52,9 @@ const Interests: React.FC = () => {
           ))}
         </ul>
       </div>
-      <div className="interests-section">
+      <div className="section">
         <h2>Favorite Programming Languages</h2>
-        <ul>
+        <ul className="interests-list">
           {interestsData?.["Favorite Programming Languages"].map((language, index) => (
             <li key={index}>
               <i className="fas fa-code" aria-hidden="true"></i> <span>{language}</span>
@@ -62,7 +62,7 @@ const Interests: React.FC = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </div>
   );
 }
 

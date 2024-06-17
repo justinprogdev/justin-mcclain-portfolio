@@ -9,50 +9,51 @@ interface FormData {
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({ name: '', email: '', message: '' });
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e: FormEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    // Replace with your form submission logic
-    console.log(formData);
+    setSubmitted(true);
   };
 
   return (
     <div className="contact">
       <h1>Contact Justin</h1>
-      <p>I would love to hear from you, please leave your information and I will reply shortly!</p>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <label htmlFor="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        />
-        <button type="submit">Submit</button>
-      </form>
+      <p>I would love to hear from you, enter your contact info, and you may contact me directly!</p>
+      {submitted ? (
+        <div className="contact-details">
+          <p>Thank you for reaching out!</p>
+          <p>You can contact me directly at:</p>
+          <p>Email: developmentjustin7@gmail.com</p>
+          <p>Phone: (260) 247-6684</p>
+        </div>
+      ) : (
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <button type="submit">Submit</button>
+        </form>
+      )}
     </div>
   );
 };

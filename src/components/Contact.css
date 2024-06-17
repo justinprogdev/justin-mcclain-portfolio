@@ -9,7 +9,7 @@
   color: #333333;
 }
 
-.contact p{
+.contact p {
   font-size: 1.2em;
   text-align: center;
 }
@@ -57,20 +57,25 @@
 
 @media (max-width: 600px) {
   .contact {
-      padding: 20px;
-      margin: 20px;
+    padding: 20px;
+    margin: 20px;
   }
 
   .contact h1 {
-      font-size: 2em;
+    font-size: 2em;
   }
 
   .contact label {
-      font-size: 1em;
+    font-size: 1em;
   }
 
   .contact input,
   .contact textarea {
-      font-size: 1em;
+    font-size: 1em;
   }
+}
+
+.contact-details {
+  text-align: center;
+  font-size: 1.2em;
 }
