@@ -9,7 +9,7 @@ function Navbar() {
         <li><Link to="/interests">Interests</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/resume">Resume</Link></li>
-        <li><Link to="/photo-gallery">Photo Gallery</Link></li>
+        <li><Link to="/contacts">Contacts</Link></li>
       </ul>
     </nav>
   );

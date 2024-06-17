@@ -5,7 +5,8 @@ import Biography from './components/Biography';
 import Interests from './components/Interests';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-import PhotoGallery from './components/PhotoGallery';
+import Contacts from './components/Contacts';
+
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const App: React.FC = () => {
           <Route path="/interests" element={<Interests />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/photo-gallery" element={<PhotoGallery />} />
+          <Route path="/contacts" element={<Contacts />} />
           <Route path="/" element={<Biography />} /> {/* Default route */}
         </Routes>
       </div>
