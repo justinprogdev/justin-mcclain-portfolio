@@ -9,6 +9,11 @@
   color: #333333;
 }
 
+.contact p{
+  font-size: 1.2em;
+  text-align: center;
+}
+
 .contact h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
