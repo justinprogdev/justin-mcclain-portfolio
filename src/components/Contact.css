@@ -1,3 +1,5 @@
+/* Again, a conservative white content surrounded by slightly darker background.
+Noticeable box shadowing, slightly rounded border radius and darker text. */
 .contact {
   background-color: #ffffff;
   padding: 40px;
@@ -11,6 +13,11 @@
 
 .contact p {
   font-size: 1.2em;
+  text-align: center;
+}
+
+.contact data {
+  font-size: 1.0em;
   text-align: center;
 }
 
@@ -40,6 +47,7 @@
   box-sizing: border-box;
 }
 
+/* Nice blue button to stand out but not be obnoxious. */
 .contact button {
   background-color: #2980b9;
   color: #ffffff;
@@ -51,10 +59,12 @@
   text-align: center;
 }
 
+/* Button gets lighter on hover */
 .contact button:hover {
   background-color: #3498db;
 }
 
+/* Reduce margin and pad on smaller devices. */
 @media (max-width: 600px) {
   .contact {
     padding: 20px;

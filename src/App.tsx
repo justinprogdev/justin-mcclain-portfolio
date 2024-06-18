@@ -7,7 +7,7 @@ import Contact from './components/Contact';
 import Resume from './components/Resume';
 
 
-
+// App component handles all routing w default route of Bio.
 const App: React.FC = () => {
   return (
     <Router>

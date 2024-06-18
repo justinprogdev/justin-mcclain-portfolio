@@ -1,3 +1,5 @@
+/* Subtle styling, small border radius, with some box shadow.
+Dark gray text again to match the nav */
 .interests {
   background-color: #ffffff;
   padding: 40px;
@@ -9,6 +11,8 @@
   color: #333333;
 }
 
+/* Larger heading with blue hue, as my interests should not be overlooked, since they are an important part
+of my personality. */
 .interests h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
@@ -16,6 +20,8 @@
   text-align: center;
 }
 
+/* I used this for my current interests, it is data driven,
+I made it light blue like my tagline on my portfolio.  */
 .interests .tagline {
   font-size: 1.2em;
   margin-bottom: 20px;
@@ -24,10 +30,13 @@
   color: #2980b9;
 }
 
+/*  Add margin between sections */
 .section {
   margin: 20px 0;
 }
 
+/* Section sub headings are a gray but a little lighter than nav so 
+list items below would stand out. */
 .section h2 {
   font-size: 1.8em;
   color: #444;
@@ -35,6 +44,7 @@
   text-align: center;
 }
 
+/* Interests list is  a flex container for responsiveness*/
 .interests-list {
   list-style-type: none;
   padding: 0;
@@ -43,6 +53,8 @@
   flex-wrap: wrap;
 }
 
+/* List items have light gray style, with transition effects.
+Slightly rounded edges with soft shadow */
 .interests-list li {
   font-size: 1.2em;
   color: #555;
@@ -60,13 +72,13 @@
   margin-right: 10px;
 }
 
+/* On hover darken the color abd shadow, move up 5px. */
 .interests-list li:hover {
   background-color: #e0e0e0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 
-/* Responsive Media Queries */
 @media (max-width: 600px) {
   .interests {
     padding: 20px;
