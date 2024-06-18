@@ -7,6 +7,9 @@ My personal portfolio site, developed using React with TSX and deployed on Verce
 ## View the site deployment on Vercel  
 `https://justin-mcclain-portfolio-2c24.vercel.app/`
 
+## Video Upload  
+`https://youtu.be/bPZpS0jmrd8`
+
 ## Runbook  
 1. Clone the repo:   
 `git clone https://github.com/justinprogdev/justin-mcclain-portfolio
