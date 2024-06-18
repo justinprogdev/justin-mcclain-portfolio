@@ -1,14 +1,18 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  /* Slightly darker than the main content, to frame it nicely */
   background-color: #f8f8f8;
 }
 
 nav {
+  
+/*Dark gray, to top off the page. */
   background-color: #333;
   padding: 10px;
 }
 
+/* Justify the nav list, to distribute space. */
 nav ul {
   list-style: none;
   display: flex;
@@ -20,11 +24,13 @@ nav ul li {
   margin: 0 10px;
 }
 
+/* White to make the nav text pop on the dark navbar.  */
 nav ul li a {
   color: white;
   text-decoration: none;
 }
 
+/* Underline on nav-link hover */
 nav ul li a:hover {
   text-decoration: underline;
 }
@@ -33,11 +39,12 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+/* Dark gray headings to match the nav bar gray */
 h1, h2 {
   color: #333;
 }
 
-/* Flexbox Container */
+/* Flexbox Container for responsive design */
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +57,6 @@ h1, h2 {
   background-color: #f9f9f9;
   padding: 20px;
   border-radius: 5px;
-  flex: 1 1 300px;  /* Grow, shrink, basis */
+  flex: 1 1 300px;  /* Grow - shrink - basis */
   max-width: 400px;
 }
